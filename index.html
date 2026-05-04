@@ -204,7 +204,6 @@
                 
                 <div class="footer-contact">
                     <h4 class="font-diwani text-white">تواصل معنا</h4>
-                    <p>WhatsApp:+213668962564</p>
                     <div class="social-icons">
                         <a href="https://t.me/MoathinAlgerie">Telegram</a>
                         <a href="https://www.youtube.com/@moathin_algerie">YouTube</a>
@@ -219,14 +218,12 @@
     </footer>
 
     <script>
-        // سكريبت للنزول السلس عند الضغط على الروابط
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
-        // سكريبت لتغيير شكل الشريط العلوي عند النزول
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.navbar');
             if (window.scrollY > 50) nav.classList.add('scrolled');
